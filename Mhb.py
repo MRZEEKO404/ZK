@@ -1,4 +1,4 @@
-import os
+mport os
 import sys
 import time
 
@@ -34,8 +34,8 @@ def execute_module(module_name):
             print(f"{R}[-] Entry function (start_cracking/main) nahi mila!{X}")
             
     except ImportError as e:
-        print(f"\n{R}[-] Error: {module_name}.so file nahi mili!{X}")
-        print(f"{Y}[!] Check karein ke file isi folder mein hai.{X}")
+        print(f"\n{R}[-] Error: {module_name}.so r nahi mili!{X}")
+        print(f"{Y}[!] Check karein ke r isi folder mein hai.{X}")
     except Exception as e:
         print(f"\n{R}[!] Error: {e}{X}")
     
@@ -45,15 +45,15 @@ def main_menu():
     while True:
         clear()
         logo()
-        print(f"{W}[{G}01{W}] {S}RUN FREE TOOL   {C}(File: file){X}")
-        print(f"{W}[{G}02{W}] {S}{Y}RUN PAID TOOL   {G}(File: MHB){X}")
+        print(f"{W}[{G}01{W}] {S}RUN FREE TOOL   {C}(r: r){X}")
+        print(f"{W}[{G}02{W}] {S}{Y}RUN PAID TOOL   {G}(r: MHB){X}")
         print(f"{W}[{R}00{W}] {S}EXIT{X}")
         print(f"{C}{S}" + "━"*55 + f"{X}")
         
         cmd = input(f"{G}MHB >> {X}")
 
         if cmd in ['1', '01']:
-            execute_module("file")
+            execute_module("r")
         elif cmd in ['2', '02']:
             execute_module("MHB")
         elif cmd in ['0', '00']:
